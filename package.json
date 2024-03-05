@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.5",
     "@react-oauth/google": "^0.11.1",
     "@react-pdf-viewer/core": "^3.12.0",
     "@tanstack/react-table": "^8.9.8",
@@ -25,7 +26,7 @@
     "dotenv": "^16.3.1",
     "downshift": "^8.2.3",
     "eslint": "8.38.0",
-    "eslint-config-next": "^13.4.1",
+    "eslint-config-next": "^14.1.2",
     "exceljs": "^4.4.0",
     "file-saver": "^2.0.5",
     "html-to-image": "^1.11.11",
@@ -40,7 +41,7 @@
     "moment-timezone": "^0.5.43",
     "mssql": "^10.0.1",
     "multi-range-slider-react": "^2.0.7",
-    "next": "^13.4.1",
+    "next": "^14.1.2",
     "next-nprogress-bar": "^2.1.2",
     "pdfjs-dist": "^3.4.120",
     "postcss": "8.4.23",

@@ -14,6 +14,7 @@ import { BulkBlockContextProvider } from "@/context/BulkBlockContext";
 
 import { PagesProgressBar as ProgressBar } from "next-nprogress-bar";
 import { CustomScreenerContextProvider } from "@/context/CustomScreenerContext";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
   // require("dotenv").config();
@@ -21,7 +22,80 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     Modal.setAppElement("#__next"); // Set the appElement to "#__next" on the client-side
   }, []);
-  return (
+  return (<>
+    <Head>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>GoIndiaStocks - Unbiased & Balanced</title>
+        <meta name="description" content="GoIndiaStocks - Unbiased & Balanced" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="mask-icon" href="/icons/mask-icon.svg" color="#FFFFFF" />
+        <meta name="theme-color" content="#ffffff" />
+        <link
+            rel="apple-touch-startup-image"
+            href="images/icons/icon-152x152.png"
+            sizes="152x152"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="images/icons/icon-192x192.png"
+            sizes="192x192"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="images/icons/icon-144x144.png"
+            sizes="144x144"
+        />
+        <link rel="manifest" href="/manifest.json" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="GoIndiaStocks - Unbiased & Balanced" />
+        <meta property="og:description" content="" />
+        <meta property="og:site_name" content="GoIndiaStocks - Unbiased & Balanced" />
+        <meta property="og:url" content="https://www.goindiastocks.com/" />
+        {/* <meta property="og:image" content="/icons/og.png" /> */}
+        {/* add the following only if you want to add a startup image for Apple devices. */}
+        <link
+            rel="apple-touch-startup-image"
+            href="images/icons/icon-72x72.png"
+            sizes="72x72"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="images/icons/icon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="images/icons/icon-128x128.png"
+            sizes="128x128"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="images/icons/icon-144x144.png"
+            sizes="144x144"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="images/icons/icon-152x152.png"
+            sizes="152x152"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="images/icons/icon-192x192.png"
+            sizes="192x192"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="images/icons/icon-384x384.png"
+            sizes="384x384"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="images/icons/icon-512x512.png"
+            sizes="512x512"
+        />
+
+    </Head>
+
     <InfoContextProvider>
       <WatchlistContextProvider>
         <BulkBlockContextProvider>
@@ -53,5 +127,6 @@ export default function App({ Component, pageProps }) {
         </BulkBlockContextProvider>
       </WatchlistContextProvider>
     </InfoContextProvider>
+  </>
   );
 }
